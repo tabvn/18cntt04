@@ -4,11 +4,13 @@
 
 <img src="./debai.png" alt="">
 
-## Tìm cạnh a, b,c 
+##  ---------------- Bài làm --------------------
+
+### Tìm cạnh a, b,c 
 
 <img src="./giai.jpg" alt="" />
 
-## C++
+### C++
 
 ```c++
 /*
