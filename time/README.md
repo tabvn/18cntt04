@@ -6,7 +6,7 @@
 
 ### Phân tích
 
-<img src="../phantich.jpg" alt="" />
+<img src="./phantich.jpg" alt="" />
 
 ### C++
 
