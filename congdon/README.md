@@ -21,7 +21,6 @@ cái này mình tham khảo Wiki - Eratosthene https://vi.wikipedia.org/wiki/S%E
 ### C++
 
 ```c++
-
 /*
  Congdon
  @Toan Nguyen Dinh 2018 CNTT04 UED.
@@ -91,7 +90,7 @@ void nhap(){
         }
        
         // In ra man hinh tong cac so chan
-        cout << "Tổng các số chẳn mà bạn đã nhập là: " << tong;
+        cout << "\nTổng các số chẳn mà bạn đã nhập là: " << tong;
     }else{
         
         // bat đầu kiểm tra xem có phải là số chẳn hay không
@@ -100,8 +99,6 @@ void nhap(){
         }
         
         // tiep tục nhâp:
-        cout << "\n";
-        
         nhap();
         
         
