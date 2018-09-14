@@ -6,5 +6,5 @@
 
 ## Tìm cạnh a, b,c 
 
-<img src="./bailam1.JPG" alt="" />
+<img src="./giai.jpg" alt="" />
 
