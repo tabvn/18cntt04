@@ -63,7 +63,7 @@ int main (){
     
     int N = 1;
     
-    cout << "Start:";
+   
     cin >> N;
     
     int arr[N][100];
