@@ -1,18 +1,16 @@
 # SUM
 
-n + m 
-
-
-
 <img src="./debai.png" />
 
 ## C++
 
 ## Sử dụng công thức
 
-tổng n + m; // n < m;
+
 
 ```
+tổng n + m; // n < m
+
 t = (m+n)* so luong phan tu/2;
 
 tong = (m +n) * ((m -n)+1)/2
