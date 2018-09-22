@@ -44,7 +44,7 @@ int main(){
     
     long int sum = 0;
     
-    cout << "Input:";
+   
     
     
     cin >> a;
