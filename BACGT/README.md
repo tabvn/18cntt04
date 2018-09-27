@@ -3,26 +3,10 @@
 ## C++
 
 ```c++
-
 #include <iostream>
 
 using namespace std;
 
-
-long int giaiThua(int num){
-    
-    if(num == 0){
-        return 1;
-    }
-    
-   int value = 1;
-    for (int i = 1; i <=num; i++) {
-        value  = value * i;
-    
-    }
-    
-    return value;
-}
 
 int deg(long int n, int v){
     
@@ -32,13 +16,13 @@ int deg(long int n, int v){
         return 0;
     }
     while(n != 0){
-
+        
         n /= v;
         d += n;
         
-    
+        
     }
-
+    
     return d;
 }
 
@@ -48,17 +32,19 @@ int main(){
     int n;
     int d;
     
+    cout << "In:";
+    
     cin >> d;
     cin >> n;
     
-    
-    long int gt = giaiThua(n);
-    int degValue = deg(gt, d);
+
+    int degValue = deg(n, d);
     
     cout <<degValue;
     
     return 0;
 }
+
 
 
 ```
