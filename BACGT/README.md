@@ -31,9 +31,11 @@ int deg(long int n, int v){
     if(n == 0 || v == 0){
         return 0;
     }
-    while(n%2 == 0){
-        d++;
+    while(n != 0){
+
         n /= v;
+        d += n;
+        
     
     }
 
