@@ -30,7 +30,6 @@ float gocTaoBoiKimPhut(int phut){
 
 int main(){
   
-    cout << "in:";
     
     float gio, phut;
     scanf("%f:%f", &gio, &phut);
