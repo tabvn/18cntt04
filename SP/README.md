@@ -3,42 +3,55 @@
 <img src="./debai.png" />
 
 ```c++
+/*
+ Đề bài:
+ m: số bút mua sẽ được tặng thêm 1 cái
+ n: tổng số bút cần phải mua
+ t: là số tiền cho 1 cái bút
+ 
+ 
+ gọi x là số bút phải trả tiền
+ gọi y là số bút được khuyến mãi
+ 
+ khi đó:
+ x + y = n (*)
+ 
+ như vậy số bút cần phải mua là n - y;
+ 
+ 
+ Cứ mua m cái sẽ được tặng thêm 1 cái. vậy khi mua n - y cái sẽ được khuyến mãi là (n-y)/m
+ 
+ => x + (n -y)/m = n;
+ 
+ 
+ y = n-y/m
+ my - n +y = 0;
+ (m +1)*y = n;
+ 
+ y = n/m+1
+ 
+ x + n/(m+1) = n;
+ 
+ x = n - n/(m+1)
+ 
+ vậy tổng số tiền phải trả là = x * t;
+ */
+
 #include <iostream>
-
 using namespace std;
-
-
-long long calulateMoney(long long m, long long n, long long t){
-    long long s = 0;
-    
-    if(m > n){ // so but mua < so yeu cau dc khuyen mai
-        return n*t;
-    }
-    
-    // so but can phai tra tien la
-    
-    long long b = n - (n/m);
-    
-    return b * t;
-    
-    
-    return s;
-}
-
 int main(){
     
-    long long m,n,t;
-    
+    int m, n, t;
     cin >> m;
     cin >> n;
-    cin >> t;
+    cin >>t;
+    int x =  n - n/(m+1);
     
-    long long s = calulateMoney(m, n, t);
-    
-    cout << s;
-    
-    return 0;
+    cout << x *t;
 }
+
+
+
 
 
 ```
