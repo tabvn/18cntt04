@@ -55,3 +55,33 @@ int main(){
 
 
 ```
+
+
+## Cách 2 (Tiên 18CNTT04)
+
+```c++
+
+#include <iostream>
+using namespace std;
+main(){
+    int m,n,t,but,tien,dem;
+    cin>>m>>n>>t;
+    but=0;
+    tien=0;
+    dem=0;
+    while (but<n){
+        ++but;
+        ++dem;
+        tien=tien+t;
+        if (dem==m){
+            ++but;
+            dem=0;
+        }
+    }
+    cout<<tien;
+}
+
+
+
+
+```
