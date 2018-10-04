@@ -7,55 +7,73 @@
 
 
 ```c++
-
 #include <iostream>
 
 using namespace std;
 
+long long arr[1000000];
+
 int timB(long long n, int b ){
-    int sd = -1;
+   
     long long value = n;
-    long long arr[n];
+    
     
     long long inc = 0;
     
     while (value > 0) {
-        int soDu = value%b;
-        long long currentValue = value / b;
+        long long soDu = value%b;
+        value /= b;
         
-        value = currentValue;
+        arr[inc] = soDu;
+        inc++;
         
-        if(sd != -1 && sd != soDu){
+        //cout << "value:" << value << endl;
+        
+        
+        if(value == 0){
+            // bat dau kiem tra
+            bool same = true;
             
-            sd = -1;
-            value = n;
-            b++;
-            timB(n, b);
-        }else{
-            arr[inc] = soDu;
-             sd = soDu;
-            inc++;
+            long long lastValue = arr[0];
+            
+            
+            for (int i = 0; i< inc; i++) {
+                if(lastValue != arr[i]){
+                    same = false;
+                }
+            }
+        
+            if(!same){
+                // tang b++
+                b++;
+                return timB(n, b);
+            }
         }
         
-       
     }
+    
+
     return b;
 }
 int main(){
     
-    long long n = 219;
+
+    
+    long long n;
     
     
     cin >> n;
-
+    
     int b = 2;
-
+    
     b = timB(n,b);
     
     cout << b;
     
     return 0;
 }
+
+
 
 
 ```
