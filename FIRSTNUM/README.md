@@ -6,20 +6,22 @@
 
 ```c++
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 
 
-int main(){
 
+
+int main(){
     
-    int MAX = 100000;
+    long long MAX = 100000;
     int num;
-    long long numArr[MAX*5]; // mang gom cac so thap phan cua em trai hoang
-    
     cin >> num;
-    int arr[6]; // mang gom cac chu cai cua so
+    string numArr = "";
+    
+    int arr[10]; // mang gom cac chu cai cua so
     
     int inc = 0;
     
@@ -27,7 +29,7 @@ int main(){
         
         int k = i;
         
-        int subArr[6]; // max la so co 6 chu so
+        int subArr[10]; // max la so co 6 chu so
         int subInc = 0;
         while (k > 0) {
             int v = k % 10;
@@ -39,8 +41,8 @@ int main(){
         }
         
         for (int j= subInc - 1; j >= 0; j--) {
-            numArr[inc] = subArr[j];
-          //  cout << subArr[j] << endl;
+            numArr += (char)subArr[j];
+            //  cout << subArr[j] << endl;
             inc++;
         }
     }
@@ -53,10 +55,10 @@ int main(){
         num /= 10;
         
         arr[increase] = n;
-    
+        
         
         increase ++;
-    
+        
     }
     
     int arr1[6];
@@ -72,11 +74,12 @@ int main(){
     
     for (int j=0; j<=inc; j++) {
         // tim vi tri so dau tien xem the nao
-    
+        
         
         
         if(arr1[0] == numArr[j]){
-        
+            
+            // cout << "Debug:" << vitri << endl;
             
             // neu tim thay so dau tien giong ta so sanh tiep tuc cac so con lai
             bool found = true;
@@ -99,10 +102,6 @@ int main(){
     
     int ketqua = vitri+1;
     cout << ketqua;
-    
-    
-    
-    
     
     
     return 0;
