@@ -27,6 +27,7 @@ float length(Point a, Point b){
 }
 int main(){
     
+
     
     int x, y;
     cin >> x >> y;
@@ -57,10 +58,21 @@ int main(){
     else{
         
         if(C.x > B.x && C.x > 0){
-            // re phai
-            cout << "RIGHT";
+            if(C.y > B.y){
+                // re trai
+                cout << "LEFT";
+            }else{
+                // rephai
+                cout << "RIGHT";
+            }
+            
         }else{
-            cout << "LEFT";
+            if(C.y > B.y){
+                cout << "LEFT";
+            }else{
+                cout << "RIGHT";
+            }
+            
             
         }
     }
