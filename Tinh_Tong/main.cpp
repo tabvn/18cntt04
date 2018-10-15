@@ -29,7 +29,7 @@ int main(){
 	}
 
 	s = sum(b) - sum(a -1);
-	cout << s; 
+	cout << s%1000000007; 
 
 	return 0;
 }
